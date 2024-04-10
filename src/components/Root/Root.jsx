@@ -5,9 +5,11 @@ import Header from '../Header/Header';
 const Root = () => {
     return (
         <div>
-            <Outlet></Outlet>
+           <div className='max-w-6xl mx-auto'>
+             <Outlet></Outlet>
+             <Header></Header>
+           </div>
             <Footer></Footer>
-            <Header></Header>
         </div>
     );
 };
